@@ -2,6 +2,19 @@
 
 Keep Private Endpoint DNS records correct across subscriptions, regions, and hybrid resolvers automatically.
 
+## Project metadata
+
+The metadata below is derived from tracked source, manifests, and infrastructure
+files. It describes what this repository includes; live-service integration remains
+bounded by the documented deployment and validation limitations.
+
+| Category | Included |
+| --- | --- |
+| Platforms | Microsoft Azure; GitHub Actions |
+| Services and stack | Private Link; Private DNS Zones; Private Resolver; Event Grid; Functions |
+| Languages and formats | Python; Bicep; Bicep parameters; Bash; JSON; YAML |
+| Delivery and IaC | Bicep + `.bicepparam`; GitHub Actions CI; YAML configuration; Python validation/tests |
+
 ## Problem statement
 
 A Private Endpoint event is normalized into an idempotent, tenant-scoped DNS reconciliation plan that requires fresh evidence and private access before records are changed.
